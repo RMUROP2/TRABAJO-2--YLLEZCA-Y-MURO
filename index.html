@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Productos/Servicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="win">
+
+    <div class="title">
+        <span>Venta de Productos/Servicios IGV=0.00</span>
+        <button class="close-btn" onclick="closeWindow()">×</button>
+    </div>
+
+    <div class="left">
+
+        <div class="row">
+            <img src="eco.png">
+            <span>Almacen/Sucursal</span>
+            <select class="sel">
+                <option>20801 Tienda Principal</option>
+            </select>
+        </div>
+
+        <div class="grid">
+            <span class="nodata">&lt;No data to display&gt;</span>
+        </div>
+
+        <div class="bus">
+            <button class="btn-search">
+                <img src="lupa.png" class="icono">
+                Buscar
+            </button>
+            <input class="busin" type="text">
+        </div>
+            
+
+        <div class="panelbot">
+            <div class="contenedor">
+               <div class="panel-izq">
+        <button class="btn-return">««</button>
+    </div> 
+             <div class="panel-der">
+
+        <div class="fila">
+            <label>Cantidad</label>
+            <input type="number" class="txt">
+             <button class="mini"><img src="caculadora.png"class="icono">
+            x Unids.
+        </button>
+        </div>
+
+        <div class="fila">
+            <label>Precio</label>
+            <input type="number" class="txt">
+            <button class="mini"><img src="agregar.png" class="icono">
+            Agregar</button>
+        </div>
+
+        <div class="fila">
+            <label>Sub Total</label>
+            <input type="text" class="txt">
+            <button class="mini"><img src="limpiar.png" class="icono">Limpiar</button>
+        </div>
+
+        <div class="check">
+            <input type="checkbox"> Venta al Menudeo
+        </div>
+
+        <div class="nota">
+            <textarea></textarea>
+        </div>
+          </div> 
+
+    </div>
+
+  
+    <div class="right">
+
+        <div class="header">
+            <div class="empresa">MURO & YLLESCA</div>
+            <div class="sub">VENTA AL POR MENOR DE ARTICULOS DE FERRETERIA</div>
+        </div>
+
+        <div class="doc-data">
+            <div class="rucbox">10293270631</div>
+
+            <div class="factura">
+    <select id="tipoDoc">
+        <option value="factura">FACTURA</option>
+        <option value="boleta">BOLETA</option>
+    </select>
+</div>
+
+            <div class="seriebox">
+                <span class="serie">FF01</span>
+                <input type="text" class="num" value="00000001" disabled>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="frow">
+                <label>Fecha</label>
+                <input type="date" class="in">
+            </div>
+
+            <div class="frow">
+                <label>Turno</label>
+                <select class="in">
+                    <option>Mañana</option>
+                </select>
+            </div>
+
+            <div class="frow">
+                <label>RUC</label>
+                <input type="text" class="in">
+                <button class="ico"><img src="check.png"></button>
+                <button class="ico"><img src="lupa.png"></button>
+                <button class="ico"><img src="lupa s.png"></button>
+            </div>
+
+            <div class="frow">
+                <label>R. Social</label>
+                <input type="text" class="in wide">
+            </div>
+
+            <div class="frow">
+                <label>Direccion</label>
+                <input type="text" class="in wide">
+            </div>
+        </div>
+
+        <div class="tabl">
+            <div class="thead">
+                <div class="c">CANT.</div>
+                <div class="c">UNID</div>
+                <div class="c">DESCRIPCION</div>
+                <div class="c">PU</div>
+                <div class="c">SUBTOT</div>
+            </div>
+            <div class="tbody">
+            </div>
+        </div>
+
+        <div class="glosa">
+            <textarea class="gls"></textarea>
+            <input class="det" type="text" value="Detalles">
+        </div>
+
+        <div class="bottom-controls">
+    <button class="btn">
+        <img src="editar.png" class="ic"> Editar Cantidad
+    </button>
+
+    <button class="btn">
+        <img src="caculadora.png" class="ic"> Editar Precio
+    </button>
+
+    <button class="btn">
+        <img src="eliminar.png" class="ic"> Eliminar Producto
+    </button>
+</div>
+
+<div class="tot">
+    <div class="trow"><span>Sub.Total</span><span>S/. 0.00</span></div>
+    <div class="trow"><span>(0.00) I.G.V.</span><span>S/. 0.00</span></div>
+    <div class="trow total"><span>Total</span><span>S/. 0.00</span></div>
+</div>
+
+<div class="user">
+    <span>Usuario = ADMIN SISTEMA</span>
+</div>
+
+<div class="pago">
+    <span>Tipo Pago</span>
+    <select><option>CONTADO</option></select>
+</div>
+
+<div class="botrow">
+    <button class="b"><img src="nuevo.png" class="ic"> Nuevo Comprobante</button>
+    <button class="b"><img src="emitir.png" class="ic"> Emitir Documento</button>
+    <button class="b"><img src="cerrar.png" class="ic"> Cerrar Ventana</button>
+</div>
+
+    </div>
+
+</div>
+
+<script>
+function closeWindow() {
+    document.querySelector(".win").style.display = "none";
+}
+</script>
+
+</body>
+</html>

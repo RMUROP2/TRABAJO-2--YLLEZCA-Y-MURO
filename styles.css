@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+body {
+    background: #eef3d6;
+    margin: 0;
+}
+
+.win {
+    width: 1280px;
+    height: 760px;
+    margin: auto;
+    background: #f4f7d5;
+    border: 1px solid #9ca58a;
+    position: relative;
+}
+
+
+.title {
+    background: #d5edff;
+    padding: 4px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    border-bottom: 1px solid #9aa18a;
+}
+
+.close-btn {
+    background: #ff4444;
+    border: 1px solid #660000;
+    width: 22px;
+    cursor: pointer;
+}
+
+
+.left {
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    width: 480px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sel {
+    width: 300px;
+    height: 20px;
+}
+
+.grid {
+    margin-top: 6px;
+    width: 100%;
+    height: 320px;
+    border: 1px solid #cac5c5;
+    background: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.bus {
+    display: flex;
+    margin-top: 6px;
+}
+
+.btn-search {
+    width: 70px;
+    height: 22px;
+    border: 1px solid #cdd1c9;
+    background: rgb(245, 246, 245);
+}
+
+.btn-search img {
+    width: 16px;
+    
+}
+
+.busin {
+    width: 370px;
+    height: 22px;
+    background: #f4f4c3;
+    border: 2px solid #fefbfb;
+    border-bottom: 2px solid #b6b3b3;
+    
+     
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 1px;
+    padding:2px;
+    border-radius: 1px;
+    width: 100%;     
+    margin: 20px auto;
+}
+.panel-izq {
+    background: #ffffff;
+    position: relative;
+}
+
+.btn-return {
+    position: absolute ;
+    bottom: 10px;
+    left: 140px;
+    padding: 5px 12px;
+    background: #f2f2d8;
+    border: 1px solid #a5a0a0;
+    
+    cursor: pointer;
+    
+}
+ .panel-der {
+    padding-left: 6px;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 65px 100px 70px;
+    align-items: center;
+    margin-bottom: 3px;
+    
+}.fila input {
+    background: #f4f4c3;
+    border: 3px solid #fefbfb;
+    border-bottom: 2px solid #b6b3b3;
+}
+
+.fila label {
+    font-size: 11px;
+    font-weight: bold;
+    
+}
+
+.txt {
+    width: 80px;
+    height: 22px;
+    background: #f2f2d8;
+    border: 1px solid #aaa;
+    
+    
+
+}
+
+
+.mini {
+    width: 80px;
+    height: 25px;
+    background: #fff;
+    border: 1px solid #d7d1d1;
+    cursor: pointer;
+    
+}
+
+.mini img {
+    width: 20px;
+    
+}
+
+
+
+.check {
+    margin-top: 10px;
+}
+
+.nota textarea {
+    width: 280px;
+    height: 160px;
+    background: #fefeea;
+    margin-top: 10px;
+    border: 2px solid #b2b2ae;
+}
+
+
+.right {
+    position: absolute;
+    left: 500px;
+    top: 30px;
+    width: 760px;
+}
+
+
+.empresa {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sub { font-size: 11px; }
+
+
+.doc-data {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 260px;
+    border: 1px solid black;
+    padding: 4px;
+    background: #ffffe2;
+}
+
+.rucbox {
+  
+    font-size: 18px;
+    text-align:center;
+}
+
+.factura select {
+    text-align:center;
+    letter-spacing: 12px;
+      font-size: 14px;
+    padding: 4px 23px 5px 23px;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.seriebox {
+    display: flex;
+    margin-top: 6px;
+}
+
+.serie {
+    background: #fdfafa;
+    color: rgb(232, 16, 16);
+    padding: 8px 30px;
+    margin-right:  15px;
+    padding: 4px 20px 5px 2px;
+}
+
+.num {
+    width: 120px;
+    background: #eee;
+}
+
+
+.form {
+    margin-top: 80px;
+}
+
+.frow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+.in {
+    height: 20px;
+    border: 1px solid #999;
+    padding: 2px;
+}
+
+.wide {
+    width: 400px;
+}
+
+.ico {
+    width: 26px;
+    height: 23px;
+    background: white;
+    border: 1px solid #777;
+}
+
+.ico img {
+    width: 14px;
+}
+
+.tabl {
+    border: 1px solid #888;
+    height: 240px;
+    margin-top: 6px;
+}
+
+.thead {
+    display: grid;
+    grid-template-columns: 60px 60px 300px 60px 80px;
+    background: #eef2c4;
+}
+
+.c {
+    border-right: 1px solid #aaa;
+    padding: 2px;
+}
+
+
+.glosa {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.gls {
+    flex: 1;
+    height: 22px;
+}
+
+.det {
+    width: 80px;
+    height: 22px;
+    background: #f4e7aa;
+}
+
+
+.bottom-controls {
+    display: flex;
+    gap: 6px;
+    margin-top: 6px;
+     width:px;
+     
+}
+.botrow {
+    width:4  px;
+    
+}
+.btn {
+    height: 29px;
+}
+
+.tot {
+
+    width: 200px;
+    border: 1px solid #999;
+    padding: 4px;
+    background: #ffffe0;
+    margin-top: 8px;
+}
+
+.trow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.total { background: yellow; }
+
+.user {
+    margin-top: 6px;
+}
+
+.user span {
+    background: #b40000;
+    color: white;
+    padding: 2px 6px;
+}
+
+.pago {
+    margin-top: 6px;
+    display: flex;
+    gap: 6px;
+}
+
+.botrow {
+    display: flex;
+    gap: 10px;
+    margin-top: 7px;
+   
+    height: 2px;
+}
+
+.b {
+    height: 26px;
+    background: #eaeaea;
+}
